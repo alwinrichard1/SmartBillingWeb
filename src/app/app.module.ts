@@ -1,18 +1,32 @@
+import { templateDeclaration, templateEntry } from './app-templates.module';
+import { pipesDeclarations } from './app-pipes.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
+import 'hammerjs';
+import { materialImports } from "app/app-material.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routingComponents,
+    templateDeclaration,
+    pipesDeclarations
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule,
+    materialImports
+  ],
+  entryComponents: [
+    templateEntry
   ],
   providers: [],
   bootstrap: [AppComponent]
