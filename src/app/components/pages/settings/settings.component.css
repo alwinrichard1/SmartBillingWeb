@@ -1,0 +1,34 @@
+.tiles {
+  padding: 1%;
+}
+
+.tiles-content {
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.87);
+  padding: 4%;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #9c27b0;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+.tiles-content p {
+  margin: 0;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.tiles-content:hover {
+  box-shadow: 0px 0px 8px 1px;
+}
+
+.tiles-content i {
+  font-size: 35px;
+  float: left;
+  margin-right: 15px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  color: #a9afbb;
+}
