@@ -8,7 +8,8 @@ import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import 'hammerjs';
-import { materialImports } from "app/app-material.module";
+import { materialImports } from 'app/app-material.module';
+import { NguiAutoCompleteModule } from '@ngui/auto-complete';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { materialImports } from "app/app-material.module";
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    materialImports
+    materialImports,
+    NguiAutoCompleteModule
   ],
   entryComponents: [
     templateEntry

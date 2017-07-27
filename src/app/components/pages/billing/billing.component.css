@@ -1,0 +1,43 @@
+td {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.actions i {
+  font-size: 17px;
+}
+
+.title p {
+  display: inline;
+}
+
+.title p span {
+  padding-right: 3%;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.right {
+  float: right;
+}
+
+.product-list {
+  max-height: 250px;
+  overflow: auto;
+}
+
+.actions-th {
+  width: 55px;
+}
+
+.green-btn {
+  background-color: #689F38;
+  color: white;
+  font-weight: 500;
+}
+
+.warning-btn {
+  background-color: #FF8A65;
+  color: white;
+  font-weight: 500;
+}

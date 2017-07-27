@@ -2,8 +2,7 @@ import {
     MdInputModule, MdButtonModule, MdSnackBarModule,
     MdDialogModule, MdCardModule, MdTooltipModule,
     MdProgressBarModule, MdSelectModule, MdSlideToggleModule,
-    MdDatepickerModule,
-    MdNativeDateModule
+    MdDatepickerModule,MdNativeDateModule, MdAutocompleteModule
 } from '@angular/material';
 
 
@@ -18,5 +17,6 @@ export const materialImports = [
     MdSelectModule,
     MdSlideToggleModule,
     MdDatepickerModule,
-    MdNativeDateModule
+    MdNativeDateModule,
+    MdAutocompleteModule
 ]

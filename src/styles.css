@@ -1,2 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgb(156, 39, 176);
+  -webkit-box-shadow: 0 0 1px rgb(156, 39, 176);
+}
+
+.ngui-auto-complete>ul li.selected {
+  background-color: #b46bc5 !important;
+  color: white !important;
+}
