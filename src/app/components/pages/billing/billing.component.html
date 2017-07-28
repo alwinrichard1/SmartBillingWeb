@@ -2,7 +2,9 @@
   <div class="card">
     <div class="card-header" data-background-color="purple">
       <h4 class="title">
-        <p>#Bill: <span>544554 </span></p>
+        <p>#Bill:
+          <input type="number" value="6415" class="bill-number"/>
+        </p>
         <p>Date: <span>22/11/11</span></p>
         <p class="right">Total: <span>550/-</span></p>
       </h4>
@@ -16,7 +18,7 @@
           <input auto-complete [(ngModel)]="selectedDoctor" [source]="doctors" mdInput placeholder="Doctor Name">
         </md-input-container>
       </div>
-      <md-input-container>
+      <md-input-container class="product-input">
         <input auto-complete [(ngModel)]="selectedProduct" [source]="products" mdInput placeholder="Product">
       </md-input-container>
       <md-input-container>
@@ -111,7 +113,7 @@
         </table>
       </div><br/>
       <button class="right green-btn" md-raised-button>Print Bill</button>
-      <button  class="warning-btn" md-raised-button>Exit</button>
+      <button class="warning-btn" md-raised-button>Exit</button>
     </div>
   </div>
 </div>

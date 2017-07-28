@@ -1,3 +1,4 @@
+import { BillHistoryComponent } from './components/pages/billHistory/billHistory.component';
 import { SettingsComponent } from './components/pages/settings/settings.component';
 import { ClosingComponent } from './components/pages/closing/closing.component';
 import { ExpiryProductsComponent } from './components/pages/expiryProducts/expiryProducts.component';
@@ -11,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
     { path: '', component: BillingComponent },
     { path: 'billing', component: BillingComponent },
+    { path: 'billHistory', component: BillHistoryComponent },
     { path: 'purchase', component: PurchaseComponent },
     { path: 'reports', component: ReportsComponent },
     { path: 'expiryProducts', component: ExpiryProductsComponent },
@@ -32,5 +34,5 @@ export class AppRoutingModule { }
 /**ADD COMPONENTS IN routingComponents */
 export const routingComponents = [
     BillingComponent, PurchaseComponent, ReportsComponent, ExpiryProductsComponent
-    , ClosingComponent, SettingsComponent
+    , ClosingComponent, SettingsComponent, BillHistoryComponent
 ]
