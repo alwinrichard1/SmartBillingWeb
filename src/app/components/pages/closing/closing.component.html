@@ -1,3 +1,200 @@
-<p>
-  closing works!
-</p>
+<md-tab-group>
+  <md-tab label="Daily Clossing">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-content table-responsive">
+          <div class="product-list">
+            <form class="navbar-form search-field" role="search">
+              <div class="form-group search-div is-empty">
+                <input type="text" class="form-control search-input" placeholder="Search">
+                <span class="material-input"></span>
+              </div>
+              <button [mdMenuTriggerFor]="menu" class="btn btn-white btn-round btn-just-icon">
+                <i class="material-icons">date_range</i>
+              </button>
+              <md-menu #menu="mdMenu">
+                <md-input-container class="menu-input">
+                  <input type="date" mdInput placeholder="From Date">
+                </md-input-container>
+                <md-input-container class="menu-input">
+                  <input type="date" mdInput placeholder="To Date">
+                </md-input-container>
+                <button class="menu-search">Search</button>
+              </md-menu>
+            </form>
+            <table class="table">
+              <thead class="text-primary">
+                <tr>
+                  <th>Date</th>
+                  <th>Day</th>
+                  <th>Number of bills</th>
+                  <th class="actions-th"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/12/2012</td>
+                  <td>Monday</td>
+                  <td>200</td>
+                  <td class="actions">
+                    <i class="material-icons">print</i>
+                    <i class="material-icons">pageview</i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-tab>
+  <md-tab label="Weekly Clossing">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-content table-responsive">
+          <div class="product-list">
+            <form class="navbar-form search-field" role="search">
+              <div class="form-group search-div is-empty">
+                <input type="text" class="form-control search-input" placeholder="Search">
+                <span class="material-input"></span>
+              </div>
+              <button [mdMenuTriggerFor]="menu" class="btn btn-white btn-round btn-just-icon">
+                <i class="material-icons">date_range</i>
+              </button>
+              <md-menu #menu="mdMenu">
+                <md-input-container class="menu-input">
+                  <input type="date" mdInput placeholder="From Date">
+                </md-input-container>
+                <md-input-container class="menu-input">
+                  <input type="date" mdInput placeholder="To Date">
+                </md-input-container>
+                <button class="menu-search">Search</button>
+              </md-menu>
+            </form>
+            <table class="table">
+              <thead class="text-primary">
+                <tr>
+                  <th>Date</th>
+                  <th>Day</th>
+                  <th>Number of bills</th>
+                  <th class="actions-th"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/12/2012</td>
+                  <td>Monday</td>
+                  <td>200</td>
+                  <td class="actions">
+                    <i class="material-icons">print</i>
+                    <i class="material-icons">pageview</i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-tab>
+
+  <md-tab label="Monthly Clossing">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-content table-responsive">
+          <div class="product-list">
+            <form class="navbar-form search-field" role="search">
+              <div class="form-group search-div is-empty">
+                <input type="text" class="form-control search-input" placeholder="Search">
+                <span class="material-input"></span>
+              </div>
+              <button [mdMenuTriggerFor]="menu" class="btn btn-white btn-round btn-just-icon">
+                <i class="material-icons">date_range</i>
+              </button>
+              <md-menu #menu="mdMenu">
+                <md-input-container class="menu-input">
+                  <input type="date" mdInput placeholder="From Date">
+                </md-input-container>
+                <md-input-container class="menu-input">
+                  <input type="date" mdInput placeholder="To Date">
+                </md-input-container>
+                <button class="menu-search">Search</button>
+              </md-menu>
+            </form>
+            <table class="table">
+              <thead class="text-primary">
+                <tr>
+                  <th>Date</th>
+                  <th>Day</th>
+                  <th>Number of bills</th>
+                  <th class="actions-th"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/12/2012</td>
+                  <td>Monday</td>
+                  <td>200</td>
+                  <td class="actions">
+                    <i class="material-icons">print</i>
+                    <i class="material-icons">pageview</i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-tab>
+  
+  <md-tab label="Yearly Clossing">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-content table-responsive">
+          <div class="product-list">
+            <form class="navbar-form search-field" role="search">
+              <div class="form-group search-div is-empty">
+                <input type="text" class="form-control search-input" placeholder="Search">
+                <span class="material-input"></span>
+              </div>
+              <button [mdMenuTriggerFor]="menu" class="btn btn-white btn-round btn-just-icon">
+                <i class="material-icons">date_range</i>
+              </button>
+              <md-menu #menu="mdMenu">
+                <md-input-container class="menu-input">
+                  <input type="date" mdInput placeholder="From Date">
+                </md-input-container>
+                <md-input-container class="menu-input">
+                  <input type="date" mdInput placeholder="To Date">
+                </md-input-container>
+                <button class="menu-search">Search</button>
+              </md-menu>
+            </form>
+            <table class="table">
+              <thead class="text-primary">
+                <tr>
+                  <th>Date</th>
+                  <th>Day</th>
+                  <th>Number of bills</th>
+                  <th class="actions-th"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/12/2012</td>
+                  <td>Monday</td>
+                  <td>200</td>
+                  <td class="actions">
+                    <i class="material-icons">print</i>
+                    <i class="material-icons">pageview</i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-tab>
+</md-tab-group>

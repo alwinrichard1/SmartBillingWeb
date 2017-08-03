@@ -1,32 +1,49 @@
 <div class="col-md-12">
   <div class="card">
-    <div class="card-header" data-background-color="purple">
-      <form class="navbar-form search-field" role="search">
-        <div class="form-group search-div is-empty">
-          <input type="text" class="form-control search-input" placeholder="Search">
-          <span class="material-input"></span>
-        </div>
-        <button type="submit" class="btn btn-white btn-round btn-just-icon">
-    <i class="material-icons">search</i>
-    <div class="ripple-container"></div>
-	</button>
-      </form>
-    </div>
     <div class="card-content table-responsive">
       <div class="product-list">
+        <form class="navbar-form search-field" role="search">
+          <div class="form-group search-div is-empty">
+            <input type="text" class="form-control search-input" placeholder="Search">
+            <span class="material-input"></span>
+          </div>
+          <button [mdMenuTriggerFor]="menu" class="btn btn-white btn-round btn-just-icon">
+          <i class="material-icons">date_range</i>
+        </button>
+          <md-menu #menu="mdMenu">
+            <md-input-container class="menu-input">
+              <input type="date" mdInput placeholder="From Date">
+            </md-input-container>
+            <md-input-container class="menu-input">
+              <input type="date" mdInput placeholder="To Date">
+            </md-input-container>
+            <button class="menu-search">Search</button>
+          </md-menu>
+        </form>
         <table class="table">
           <thead class="text-primary">
             <tr>
-              <th>Customer Name</th>
-              <th>Amount</th>
+              <th>#Bill</th>
               <th>Date</th>
+              <th>Time</th>
+              <th>Customer Name</th>
+              <th>Doctor Name</th>
+              <th>Total Amount</th>
+              <th class="actions-th"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Calpol 500mg</td>
-              <td>20/-</td>
+              <td>1223</td>
               <td>20/11/1993</td>
+              <td>11:40 AM</td>
+              <td>Alwin Richard</td>
+              <td>R.V Dhamodharen</td>
+              <td>20/-</td>
+              <td class="actions">
+                <i class="material-icons">print</i>
+                <i class="material-icons">pageview</i>
+              </td>
             </tr>
           </tbody>
         </table>

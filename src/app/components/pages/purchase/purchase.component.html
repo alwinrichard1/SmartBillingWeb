@@ -1,3 +1,54 @@
-<p>
-  purchase works!
-</p>
+<div class="col-md-12">
+  <div class="card">
+    <div class="card-content table-responsive">
+      <div class="product-list">
+        <form class="navbar-form search-field" role="search">
+          <div class="form-group search-div is-empty">
+            <input type="text" class="form-control search-input" placeholder="Search">
+            <span class="material-input"></span>
+          </div>
+          <button [mdMenuTriggerFor]="menu" class="btn btn-white btn-round btn-just-icon">
+          <i class="material-icons">date_range</i>
+        </button>
+          <md-menu #menu="mdMenu">
+            <md-input-container class="menu-input">
+              <input type="date" mdInput placeholder="From Date">
+            </md-input-container>
+            <md-input-container class="menu-input">
+              <input type="date" mdInput placeholder="To Date">
+            </md-input-container>
+            <button class="menu-search">Search</button>
+          </md-menu>
+          <button md-raised-button class="enter-purchase-btn">Enter Purchase</button>
+        </form>
+        <table class="table">
+          <thead class="text-primary">
+            <tr>
+              <th>#Purchase</th>
+              <th>Purchase Number</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Supplier</th>
+              <th>Total Amount</th>
+              <th class="actions-th"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1223</td>
+              <td>12</td>
+              <td>20/11/1993</td>
+              <td>11:40 AM</td>
+              <td>A Pharma</td>
+              <td>20/-</td>
+              <td class="actions">
+                <i class="material-icons">print</i>
+                <i class="material-icons">pageview</i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

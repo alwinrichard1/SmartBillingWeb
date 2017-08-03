@@ -1,3 +1,8 @@
+import { ShopInfoComponent } from './components/pages/shopInfo/shopInfo.component';
+import { ManufacturesComponent } from './components/pages/manufactures/manufactures.component';
+import { ProductsComponent } from './components/pages/products/products.component';
+import { SuppliersComponent } from './components/pages/suppliers/suppliers.component';
+import { DoctorsComponent } from './components/pages/doctors/doctors.component';
 import { BillHistoryComponent } from './components/pages/billHistory/billHistory.component';
 import { SettingsComponent } from './components/pages/settings/settings.component';
 import { ClosingComponent } from './components/pages/closing/closing.component';
@@ -17,7 +22,12 @@ const routes: Routes = [
     { path: 'reports', component: ReportsComponent },
     { path: 'expiryProducts', component: ExpiryProductsComponent },
     { path: 'closing', component: ClosingComponent },
+    { path: 'doctors', component: DoctorsComponent },
+    { path: 'suppliers', component: SuppliersComponent },
+    { path: 'products', component: ProductsComponent },
     { path: 'settings', component: SettingsComponent },
+    { path: 'manufactures', component: ManufacturesComponent },
+    { path: 'shopInfo', component: ShopInfoComponent },
 ];
 
 @NgModule({
@@ -33,6 +43,5 @@ export class AppRoutingModule { }
 
 /**ADD COMPONENTS IN routingComponents */
 export const routingComponents = [
-    BillingComponent, PurchaseComponent, ReportsComponent, ExpiryProductsComponent
-    , ClosingComponent, SettingsComponent, BillHistoryComponent
+    ShopInfoComponent, ManufacturesComponent, ProductsComponent, SuppliersComponent, BillingComponent, PurchaseComponent, ReportsComponent, ExpiryProductsComponent, ClosingComponent, SettingsComponent, BillHistoryComponent, DoctorsComponent
 ]

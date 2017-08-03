@@ -1,0 +1,87 @@
+.search-input {
+  width: 100%;
+  color: white;
+}
+
+.search-div {
+  width: 50%;
+}
+
+.search-field,
+.search-div {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+td {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.actions i {
+  font-size: 25px;
+  color: #a13bb6;
+  cursor: pointer;
+}
+
+.title p {
+  display: inline;
+}
+
+.title p span {
+  padding-right: 3%;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.right {
+  float: right;
+}
+
+.product-list {
+  max-height: 250px;
+  overflow: auto;
+}
+
+.actions-th {
+  width: 70px;
+}
+
+.green-btn {
+  background-color: #689F38;
+  color: white;
+  font-weight: 500;
+}
+
+.warning-btn {
+  background-color: #ec592b;
+  color: white;
+  font-weight: 500;
+}
+
+.bill-number {
+  border: transparent;
+  background-color: transparent;
+  padding-right: 3%;
+  font-size: 25px;
+  font-weight: 400;
+  width: 150px;
+}
+
+.product-input {
+  width: 300px;
+}
+
+.menu-input {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.menu-search {
+  background-color: #a13bb6;
+  color: white;
+  margin-left: 10%;
+  width: 80%;
+  text-align: center;
+}
